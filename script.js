@@ -25,4 +25,5 @@ function validate(){
         alert("Posting date must not be after the event date.");
         return false;
     } 
+    else alert("Event was created. Thank you.");
 }
