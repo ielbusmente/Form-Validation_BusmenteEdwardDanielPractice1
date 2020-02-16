@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create a New Event</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body> 
+  <div id="header">  
+    Create a New Event 
+  </div>
+  <div class="container"> 
+    <form action="" onsubmit="return validate()"> 
+      <div class="row">
+        <div class="col-20">
+          <label for="events">Event Type: </label>
+        </div>
+        <div class="col-80"> 
+            <select id="events" name="events">
+                <option value="" selected disabled></option>
+                <option value="1">Program Week</option>
+                <option value="2">IICS Week</option>
+                <option value="3">Teacher's Day</option>
+                <option value="4">Valentine's Day</option> 
+                <option value="5">Seminar</option> 
+                <option value="6">Fund Raising Event</option>  
+            </select> 
+        </div>
+      </div> 
+      <div class="row">
+        <div class="col-20">
+          <label for="EventTitle" >Event Title: </label>
+        </div>
+        <div class="col-80">
+          <input type="text" id="EventTitle" placeholder="Event Title" maxlength="50">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-20">
+          <label for="EventDate" >Event Date: </label>
+        </div>   
+        <div class="col-20">
+          <input type="date" id="EventDate" placeholder="Starting Date" required>
+        </div>
+        <div class="col-10"></div>
+        <div class="col-10" >
+          <label for="to"  > to </label>
+        </div>
+        <div class="col-20">
+          <input type="date" id="to" placeholder="Finishing Date" required> 
+        </div>  
+      </div>
+      <div class="row">
+        <div class="col-20">
+          <label for="PostingDate">Posting Date:</label> 
+        </div> 
+          <div class="col-20">
+            <input type="date" id="PostingDate" placeholder="Posting Date" required>  
+        </div>
+      </div>
+      <div class="row">
+        <input type="checkbox" id="register">  
+          <label for="register">Is registration required? </label><br> 
+        <input type="checkbox" id="familyEvent">
+          <label for="familyEvent">Is this event associated with any Family Programs? </label><br> 
+        <input type="checkbox" id="eventEmail">
+          <label for="eventEmail">Upon registration completion. Are users to receive an 
+            Auto Generated Email? </label><br> 
+        <input type="checkbox" id="pointCon">
+          <label for="pointCon">Is there a point of contact? </label><br> 
+        <input type="checkbox" id="hostPointCon">
+          <label for="hostPointCon">Is there a hosting command point of contact? </label>
+      </div>
+      
+      <div class="row">
+        <div class="col-20"></div>
+        <div class="col-20"></div>
+        <div class="col-10">
+          <input type="submit" id="save" value="Save">
+        </div>
+        <div class="col-20">
+          <input type="reset" id="cancel" value="Cancel">
+        </div>  
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+ 
+ 
