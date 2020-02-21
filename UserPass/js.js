@@ -20,5 +20,7 @@ class stud extends person {
 
 var std1 = new stud("Daniel", "Male", "IT");
 var p1 = new person("Joyce", "Female");
- 
-p1 = std1;
+console.log(typeof(p1));
+p1 = 3;
+console.log(typeof(p1));
+//polymorph ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object. 
