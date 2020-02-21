@@ -20,7 +20,5 @@ class stud extends person {
 
 var std1 = new stud("Daniel", "Male", "IT");
 var p1 = new person("Joyce", "Female");
-
-p1.walk(100);
-std1.walk(200);
-std1.study(English);
+ 
+p1 = std1;
