@@ -21,7 +21,7 @@ let stud1 = new stud("Asdf",10);
 let stud2 = new stud("Fdsa",20); 
 
 stud1.study("ics202020");
-*/
+
 
 var st = {fname:"juan",}; 
 
@@ -29,3 +29,26 @@ var displayName = function(age, course) {
     alert(`${this.fname}, ${age} is taking ${course}.`);
 }
 displayName.call(st, 22,"CS");
+*/
+
+class St {
+    constructor(name, age, course) {
+        
+    }
+    static study(sub) {
+        
+    }
+    setName(name) {
+        this.name = name;
+    }
+    getName() {
+        return this.name;
+    }
+}
+
+
+//St.study("Math");
+
+let stud1 = new St();
+stud1.setName("daniel");
+alert(stud1.getName());

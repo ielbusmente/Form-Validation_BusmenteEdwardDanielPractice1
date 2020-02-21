@@ -14,9 +14,9 @@ label{
     display: inline-block;
 }
 p {
-    padding :10px; 
-    margin:0 10%;
-    color:rgb(255, 184, 184);
+    padding:10px; 
+    margin:0 5%;
+    color:white);
 }
 
 input, select{
@@ -81,4 +81,10 @@ form {
         width: 100%;
         margin-top: 0;
     }
+}
+progress {
+    margin-left:5%;
+    background-color: #333;
+    color:rgb(255, 62, 62);
+    border:none;
 }

@@ -22,6 +22,7 @@ function submitValidation() {
         pass.style.background = red;
         confPass.style.background = red;  
         status.innerHTML="Passwords don't match."
+        status.style.color = red;
         return false;
     }   
     alert(`Hello ${user.value.trim()}! You are now registered. Please check your email to confirm`+
