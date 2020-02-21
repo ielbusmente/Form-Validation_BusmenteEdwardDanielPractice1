@@ -16,7 +16,7 @@ label{
 p {
     padding:10px; 
     margin:0 5%;
-    color:white);
+    color:white;
 }
 
 input, select{
@@ -83,8 +83,9 @@ form {
     }
 }
 progress {
-    margin-left:5%;
+    margin-left:15%;
     background-color: #333;
     color:rgb(255, 62, 62);
     border:none;
+    width: 85%; 
 }

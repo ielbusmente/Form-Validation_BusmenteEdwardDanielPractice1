@@ -4,9 +4,11 @@ var sayHello = function() {
 }
 
 try {
-    sayHello();
+    throw {
+        error:"error message", description:"custom error..."
+    }
 }catch(e) {
-    console.log("An error has occured...");
+    console.log(e.description);
 }finally{
     console.log("Finally, block has executed...");
 }
