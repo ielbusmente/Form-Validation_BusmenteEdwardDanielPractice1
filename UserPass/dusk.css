@@ -9,9 +9,14 @@ body {
     background-color: #333;
 }
 
-label {
+label{
     padding: 15px ;
     display: inline-block;
+}
+p {
+    padding :10px; 
+    margin:0 10%;
+    color:rgb(255, 184, 184);
 }
 
 input, select{
@@ -72,7 +77,7 @@ form {
 
 /*when screen is less than 600px, two buttons stack*/
 @media screen and (max-width: 600px) {
-    .col-10,.col-20, .col-80, input[type=submit], input[type=reset] {
+    .col-30, .col-40, input[type=submit] {
         width: 100%;
         margin-top: 0;
     }

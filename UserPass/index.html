@@ -10,7 +10,7 @@
 <body>
     
     <div class="container">
-        <form action="" onsubmit=" " method="">
+        <form action="" onsubmit="return submitValidation()" method="">
             <div class="row">
                 <div class="col-30">
                     <label for="login">Login</label>
@@ -18,7 +18,7 @@
                 <div class="col-40">
                     <input type="text" id="login"  required maxlength="20">
                 </div> 
-            </div>
+            </div> 
             <div class="row">
                 <div class="col-30">
                     <label for="pass">Password</label>
@@ -27,7 +27,16 @@
                     <input type="password" id="pass" required maxlength="25" >
                 </div> 
                 <div class="col-30">
-                    <p id="stat" ></p>
+                    <div class="row">
+                        <div style="width: 100%;">
+                            <progress max="" value="0" id="strength"></progress>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div style="width: 100%;">
+                            <b><p id="strengthLabel" ></p></b>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -37,7 +46,10 @@
                 <div class="col-40">
                     <input type="password" id="confPass" required maxlength="25">
                 </div> 
-            </div>
+                <div class="col-30">
+                    <b><p id="stat" ></p></b>
+                </div>
+            </div> 
             <div class="row">
                 <div class="col-30">
                     <label for="gender">Gender</label>
