@@ -23,10 +23,9 @@ let stud2 = new stud("Fdsa",20);
 stud1.study("ics202020");
 */
 
-var st = {fname:"juan",};
-var det = [21, "IT"]
+var st = {fname:"juan",}; 
 
 var displayName = function(age, course) {
     alert(`${this.fname}, ${age} is taking ${course}.`);
 }
-displayName.apply(st, det);
+displayName.call(st, 22,"CS");
