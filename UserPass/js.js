@@ -1,54 +1,26 @@
-/*
-let stud1 = {name:"Asdf", section:"2ith", age:10};
-let stud2 = {name:"Fdsa", section:"2ita", age:20};
-
-function dis() {
-    alert(`${this.name}, ${this.age} is enrolled in section ${this.section}.`);
-}
-let d = dis.bind(stud1);
-
-d();
-
-function stud(name, age) {
-    this.name = name;
-    this.age = age; 
-}
-
-stud.prototype.school = "UST";
-stud.prototype.study = function(subject) { alert(`${this.name} is enrolled in ${subject} at `+
-    `${this.school}.`)};
-let stud1 = new stud("Asdf",10); 
-let stud2 = new stud("Fdsa",20); 
-
-stud1.study("ics202020");
-
-
-var st = {fname:"juan",}; 
-
-var displayName = function(age, course) {
-    alert(`${this.fname}, ${age} is taking ${course}.`);
-}
-displayName.call(st, 22,"CS");
-*/
-
-class St {
-    constructor(name, age, course) {
-        
-    }
-    static study(sub) {
-        
-    }
-    setName(name) {
+class person {
+    constructor(name, gender) {
         this.name = name;
+        this.gender = gender;
     }
-    getName() {
-        return this.name;
+    walk(distance) {
+        alert(`${this.name} walks ${distance} miles per day.`);
     }
 }
 
+class stud extends person {
+    constructor(name, gender, course){
+        super(name, gender);
+        this.course = course;
+    }
+    study(sub) {
+        alert(`${this.name} is enrolled in ${sub}.`);
+    }
+}
 
-//St.study("Math");
+var std1 = new stud("Daniel", "Male", "IT");
+var p1 = new person("Joyce", "Female");
 
-let stud1 = new St();
-stud1.setName("daniel");
-alert(stud1.getName());
+p1.walk(100);
+std1.walk(200);
+std1.study(English);
