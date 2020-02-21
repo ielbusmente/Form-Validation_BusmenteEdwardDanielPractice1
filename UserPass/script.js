@@ -1,14 +1,13 @@
-pass.addEventListener('keyup', function () {
-    var passw = document.getElementById('pass');
+function passValidation(pass) { 
+    var pass = document.getElementById('pass');
     var status = document.getElementById('stat');
     var cou = 0;
 
-    if (passw.value == "") {
-        passw.style.background = "red";
+    if (pass.value == "") {
+        pass.style.background = "black";
     }
-    else  {
-        passw.style.background = "rgb(255, 129, 129)";
-    }
-})
-                   
 
+    else  {
+        pass.style.background = "black";
+    }
+}
