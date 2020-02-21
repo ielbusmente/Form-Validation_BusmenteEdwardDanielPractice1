@@ -1,15 +1,10 @@
-
-var sayHello = function() {
- 
+let add = function(num1, num2) {
+    return num1+num2;
 }
-
-try {
-    throw {
-        error:"error message", description:"custom error..."
-    }
-}catch(e) {
-    console.log(e.description);
-}finally{
-    console.log("Finally, block has executed...");
+function fun(callback) {
+    let sum = callback(4,5);
+    console.log("sum =  "+ sum);
 }
-
+fun(add);  
+// add - called a callback function, provided as a paramete to another function
+// fun - higher-order function
