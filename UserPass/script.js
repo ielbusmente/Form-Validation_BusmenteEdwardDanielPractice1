@@ -6,10 +6,7 @@ var confPass = document.getElementById('confPass');
 var status = document.getElementById('stat');
 
 
-function submitValidation() { 
-    
-    
-
+function submitValidation() {  
     if (pass.value == "" ) {
         pass.style.background = red;
         return false;
@@ -37,4 +34,6 @@ var passStrength = function() {
         cou = 2;
     else if (pass.value.includes(/0-9/g))
         cou = 3; 
-};
+
+    return cou;
+} 

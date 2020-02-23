@@ -1,13 +1,10 @@
-// var events = document.getElementById('events').value;
-// var eventT = document.getElementById('EventTitle').value;
-var sDate = document.getElementById('EventDate').value;
-var eDate = document.getElementById('to').value;
-var pDate = document.getElementById('PostingDate').value;
+function validate(){ 
+    // var events = document.getElementById('events').value;
+    // var eventT = document.getElementById('EventTitle').value;
+    var sDate = document.getElementById('EventDate').value;
+    var eDate = document.getElementById('to').value;
+    var pDate = document.getElementById('PostingDate').value;
 
-
-
-function validate(){
- 
     // if (events === "") {
     //     alert("An Event Type must be chosen.");
     //     return false;
@@ -17,6 +14,7 @@ function validate(){
     //     return false;
     // }  
     // else 
+     
     if (sDate > eDate) {
         alert("Starting date must be before the finishing date.");
         return false;
@@ -25,5 +23,5 @@ function validate(){
         alert("Posting date must not be after the event date.");
         return false;
     } 
-    else alert("Event was created. Thank you.");
+    else alert("Event was created. Thank you."); 
 }

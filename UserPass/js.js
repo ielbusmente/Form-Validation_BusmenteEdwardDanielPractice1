@@ -1,26 +1,10 @@
-class person {
-    constructor(name, gender) {
-        this.name = name;
-        this.gender = gender;
-    }
-    walk(distance) {
-        alert(`${this.name} walks ${distance} miles per day.`);
-    }
+let add = function(num1, num2) {
+    return num1+num2;
 }
-
-class stud extends person {
-    constructor(name, gender, course){
-        super(name, gender);
-        this.course = course;
-    }
-    study(sub) {
-        alert(`${this.name} is enrolled in ${sub}.`);
-    }
+function fun(callback) {
+    let sum = callback(4,5);
+    console.log("sum =  "+ sum);
 }
-
-var std1 = new stud("Daniel", "Male", "IT");
-var p1 = new person("Joyce", "Female");
-
-p1.walk(100);
-std1.walk(200);
-std1.study(English);
+fun(add);  
+// add - called a callback function, provided as a paramete to another function
+// fun - higher-order function
